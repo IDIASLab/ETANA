@@ -3,6 +3,22 @@
 
 ETANA is an dynamic instance–wise joint feature selection and classification algorithm. F–ETANA is a fast implementation of ETANA
 
+## Citation
+To cite our paper, please use the following reference:
+
+Yasitha Warahena Liyanage, Daphney-Stavroula Zois, and Charalampos Chelmis. "Dynamic Instance–Wise Joint Feature Selection and Classification." IEEE Transactions on Artifical Intelligence (2021). doi: TBD.
+
+BibTeX:
+``` 
+@article{liyanage2021dynamic, 
+  title={Dynamic Instance–Wise Joint Feature Selection and Classification},
+  author={Liyanage, Yasitha Warahena and Zois, Daphney-Stavroula and Chelmis, Charalampos},
+  journal={IEEE Transactions on Artifical Intelligence},
+  year={2021},
+  publisher={IEEE}
+ }
+```
+
 ## Prerequisites
 
 python 2.7 or higher, and the following libraries
