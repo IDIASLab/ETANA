@@ -1,6 +1,6 @@
 from Joint_FS_and_C import ETANA, F_ETANA, Exp_Features
 import numpy as np
-import scipy
+from scipy import io
 
 '''
 Step 1. Load dataset:
@@ -9,8 +9,7 @@ Step 1. Load dataset:
     Xtest: test data
     Ytest: test labels
 '''
-
-mat = scipy.io.loadmat('Datasets/Gene/MLL_data_label_all.mat')
+mat = io.loadmat('Datasets/Gene/MLL_data_label_all.mat')
    
 Xtrain = np.array(mat['train_data'],dtype = None)
 Ytrain = mat['train_label'].astype(int)[:,0]
@@ -23,7 +22,7 @@ dataset = {'Xtrain': Xtrain, 'Ytrain': Ytrain, 'Xtest':Xtest, 'Ytest':Ytest}
 '''
 Step 2. Define configuration parameters:
     feat_cost: feature evaluation cost
-    bins: number of bins conisdered when quantizing the feature space
+    bins: number of bins considered when quantizing the feature space
     neta: parameter used to quantize the probability simplex
     SPSA_params: parameter required for SPSA stochastic gradient algorithm 
     exp_feat_para: parameter required to compute expected number of features for classification
@@ -34,7 +33,7 @@ config = {'feat_cost': 0.01, 'bins':3, 'neta': 10,
          'exp_feat_para':{'alpha':0, 'distribution': 'best'}}
 
 '''
-Step 3. Initiate an instance of ETANA (or F_ETANA) using config file and call run function
+Step 3. Initiate an instance of ETANA (or F_ETANA) using "config" file and call run function
 '''
 clf = ETANA(config)
 clf.run(dataset)
@@ -46,7 +45,7 @@ print("Classification Report: "+str(clf.summary)+'\n')
 
 '''
 Optional -- To compute expected number of features for classification
-Step 5. Initiate an instance of Exp_Features using config file and call run function
+Step 5. Initiate an instance of Exp_Features using "config" file and call run function
 '''
 obj = Exp_Features(config)
 obj.run(dataset)
