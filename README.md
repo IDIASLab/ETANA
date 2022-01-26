@@ -6,17 +6,19 @@ ETANA is an dynamic instance–wise joint feature selection and classification a
 ## Citation
 To cite our paper, please use the following reference:
 
-Yasitha Warahena Liyanage, Daphney-Stavroula Zois, and Charalampos Chelmis. "Dynamic Instance–Wise Joint Feature Selection and Classification." IEEE Transactions on Artifical Intelligence (2021). doi: TBD.
+Yasitha Warahena Liyanage, Daphney-Stavroula Zois, and Charalampos Chelmis. "Dynamic Instance–Wise Joint Feature Selection and Classification." IEEE Transactions on Artifical Intelligence (2021). doi: 10.1109/TAI.2021.3077212.
 
 BibTeX:
 ``` 
 @article{liyanage2021dynamic, 
-  title={Dynamic Instance–Wise Joint Feature Selection and Classification},
   author={Liyanage, Yasitha Warahena and Zois, Daphney-Stavroula and Chelmis, Charalampos},
-  journal={IEEE Transactions on Artifical Intelligence},
+  journal={IEEE Transactions on Artificial Intelligence}, 
+  title={Dynamic Instance-wise Joint Feature Selection and Classification}, 
   year={2021},
-  publisher={IEEE}
- }
+  volume={2},
+  number={2},
+  pages={169-184},
+  doi={10.1109/TAI.2021.3077212}}
 ```
 
 ## Prerequisites
